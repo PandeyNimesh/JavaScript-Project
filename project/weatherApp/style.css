@@ -1,0 +1,114 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+border:none;
+outline: none;
+font-family: 'Courier New', Courier, monospace;
+}
+body{
+    width:100%;
+    height:100vh;
+    background-color: #1d1d42da;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.container{
+width:400px;
+min-width:min-content;
+background-color:rgb(238, 231, 231);
+border-radius: 10px;
+padding:30px;
+}
+.searchBox{
+    width:100%;
+    min-width:min-content;
+    display:flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+.inputBox{
+    width:80%;
+    font-size: 25px;
+    font-weight:600;
+    text-transform:capitalize;
+    background-color:rgb(162, 183, 202);
+    padding:12px 16px;
+    border-radius:14px;
+
+}
+.inputBox::placeholder{
+    color:black;
+}
+.searchBox button{
+    width:46px;
+    height: 46px;
+    background-color: rgb(162, 183, 202);
+    border-radius:50%;
+    font-size: 20px;
+    cursor:pointer;
+}
+.searchBox button:hover{
+    color:aliceblue;
+    background-color: rgb(87, 104, 117);
+}
+.weatherBody{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    margin-block:20px ;
+}
+.weatherBody img{
+    width:60%;
+}
+.weather-box{
+    margin-block:20px;
+    text-align: center;
+}
+.weather-box .tempreture{
+    font-size:40px;
+    font-weight:800;
+    position:relative;
+}
+.weather-box .tempreture sup{
+    position:absolute;
+    font-size:20px;
+    font-weight:600;
+}
+.weather-box .description{
+    font-size:20px;
+    font-weight:700;
+    text-transform: capitalize;
+}
+.weather-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.humidity, .wind {
+    display: flex;
+    align-items: center;
+}
+
+.humidity .text, .wind .text {
+    margin-left: 10px;
+}
+
+.fas {
+    font-size: 24px;
+    color: blue;
+}
+.weather-details .text{
+    margin-left:10px;
+    font-size:16px;
+
+}
+.text span{
+    font-size:20px;
+    font-weight:700;
+}
+

@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color:rgba(232,238,238);
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+.input-container{
+width:100%;
+max-width:500px;
+text-align: center;
+padding:12px;
+}
+.input-container input{
+    border:none;
+    outline:none;
+    padding:12px;
+    margin-block:12px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.input-container input[type="text"]{
+    width:70%;
+}
+.input-container input[type="button"]{
+background-color:rgba(136, 231, 117, 0.849);
+font-weight: bold;
+margin-left:9px;
+padding:12px 23px;
+cursor:pointer;
+color:white;
+}
+ul{
+    width:70%;
+    max-width:450px;
+    /* display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column; */
+}
+ul li{
+    list-style-type:none;
+    cursor:pointer;
+    border:1px solid rgb(167, 162, 162);
+    border-radius: 8px;
+    padding:7px 14px;
+    margin-block-end:12px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    transition: background-color 0.5s;
+
+}
+ul li:hover{
+    background-color: rgb(197, 194, 194);
+}
+ul li p{
+    flex-grow:1;
+    padding:2px;
+}
+.Btn{
+    border:none;
+    outline:none;
+    font-size:15px;
+    font-weight:bold;
+    background-color:none;
+    cursor:pointer;
+    padding:7px;
+}
+.Remove{
+    color:rgb(231, 38, 38);
+}
+.Edit{
+    color:rgb(56, 245, 97)
+}
